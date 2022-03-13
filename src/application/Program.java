@@ -32,5 +32,12 @@ public class Program {
         sellerDao.insert(newSeller);
         System.out.println("\nInserted! New id = " + newSeller.getId());
 
+        System.out.println("\n=== TEST 5: seller update ===");
+        seller = sellerDao.findById(1);
+        seller.setName("Close O'Brian");
+        seller.setEmail("cloe.obrian@ctu.gov.us");
+        sellerDao.update(seller);
+        System.out.println("\nUpdate completed");
+
     }
 }
