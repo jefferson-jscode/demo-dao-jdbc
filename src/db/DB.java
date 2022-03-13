@@ -21,7 +21,7 @@ public class DB {
 			try {
 				Properties props = loadProperties();
 				String url = props.getProperty("dburl");
-				conn = DriverManager.getConnection(url);
+				conn = DriverManager.getConnection(url, props);
 			} catch (SQLException e) {
 				System.out.println(e.getMessage());
 			}
