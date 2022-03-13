@@ -1,0 +1,4 @@
+user=root
+password=12345
+dburl=jdbc:mysql://mysql:3306/demo-dao-jdbc
+useSSL=false
